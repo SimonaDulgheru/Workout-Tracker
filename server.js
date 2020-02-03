@@ -12,7 +12,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/heroku_sxn9j7rv"
+
+mongoose.connect(MONGODB_URI);
 
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));

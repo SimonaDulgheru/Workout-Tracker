@@ -16,5 +16,17 @@
     "mongojs": "^3.1.0",
     "mongoose": "^5.8.10",
     "morgan": "^1.9.1"
-  }
+  },
+  
+    "_id": "heroku_sxn9j7rv.Workout",
+    "user": "Workout",
+    "db": "heroku_sxn9j7rv",
+    "roles": [
+        {
+            "role": "dbOwner",
+            "db": "heroku_sxn9j7rv"
+        }
+    ]
 }
+  
+
