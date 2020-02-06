@@ -30,11 +30,10 @@ router.put("/api/workouts/:id", ({body, params}, res) => {
 });
 
 router.put("/api/stats", ({body, params}, res) => {
-    Workout.findByIdAndUpdate(
-        params.id,
+    Workout.update(
+        {_id: mongojs.ObjectId(req.params.id)},
         {$push: {exercises: body}},
-        
-        )
+    )
         .then(dbWorkouts => {
             res.json(dbWorkouts);
         })
@@ -43,7 +42,6 @@ router.put("/api/stats", ({body, params}, res) => {
         });
     
 });
-
 
 
 router.get("/api/workouts", (req, res) => {
