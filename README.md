@@ -8,6 +8,8 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 ## Business Context
 A consumer will reach their fitness goals quicker when they track their workout progress.
 
+## [Live Preview](https://arcane-wildwood-09350.herokuapp.com/) 
+
 ## Stack Used
 - HTML
 - CSS
