@@ -19,7 +19,7 @@ app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/html-routes.js"));
  
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 });
 
